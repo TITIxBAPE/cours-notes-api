@@ -1,0 +1,17 @@
+{
+  "name": "cours-notes-api",
+  "version": "1.0.0",
+  "description": "API Express exposant des notes Markdown en HTML",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "author": "Tiago",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "marked": "^12.0.2"
+  }
+}
