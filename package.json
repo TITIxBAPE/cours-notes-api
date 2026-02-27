@@ -6,12 +6,23 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "lint": "eslint .",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "author": "Tiago",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
     "marked": "^12.0.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.2",
+    "globals": "^17.3.0",
+    "jest": "^30.2.0",
+    "supertest": "^7.2.2"
   }
 }
